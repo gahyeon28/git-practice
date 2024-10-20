@@ -1,0 +1,19 @@
+#include <stdio.h>
+void main()
+{
+	float num, average;
+	int max = 3;
+	int i = 0;
+	float total = 0.0;
+
+
+	while (i < max) {
+		printf("Enter a number: ");
+		scanf_s("%f", &num);
+		total = total + num;
+		i = i + 1;
+	}
+	average = total / max;
+	printf("total = %f, average = %f", total, average);
+
+}
